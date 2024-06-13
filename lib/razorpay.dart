@@ -82,14 +82,7 @@ class _RazorPayPageState extends State<RazorPayPage> {
                 width: 300,
               ),
               SizedBox(height: 10),
-              Text(
-                "Welcome to Razorpay Integration",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18),
-                textAlign: TextAlign.center,
-              ),
+              Textwidget(),
               SizedBox(height: 10),
               Padding(
                 padding: EdgeInsets.all(8.0),
@@ -112,6 +105,24 @@ class _RazorPayPageState extends State<RazorPayPage> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class Textwidget extends StatelessWidget {
+  const Textwidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      "Welcome to Razorpay Integration",
+      style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 18),
+      textAlign: TextAlign.center,
     );
   }
 }
