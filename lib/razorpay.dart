@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:razorpay/widgets.dart';
+import 'package:razorpay/widgets/textformwidget.dart';
+import 'package:razorpay/widgets/textwidget.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 
 class RazorPayPage extends StatefulWidget {
@@ -105,24 +106,6 @@ class _RazorPayPageState extends State<RazorPayPage> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class Textwidget extends StatelessWidget {
-  const Textwidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      "Welcome to Razorpay Integration",
-      style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          fontSize: 18),
-      textAlign: TextAlign.center,
     );
   }
 }
